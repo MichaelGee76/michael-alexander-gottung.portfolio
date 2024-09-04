@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--card-color);
+    align-items: center;
+    padding: 1rem 8rem;
+    font-family: "Plus-Jakarta-Sans", sans-serif;
+}
+
+.logo {
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 66%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+svg {
+    fill: var(--primary-color);
+}

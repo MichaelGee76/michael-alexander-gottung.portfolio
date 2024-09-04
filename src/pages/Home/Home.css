@@ -1,0 +1,109 @@
+.home-container {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.home-round-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-headline {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    color: var(--secondary-text);
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ############ Buttons ############# */
+
+.home-button-container {
+    max-width: 50%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.home-button {
+    border: 2px var(--primary-color) solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.get-in-touch {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.get-in-touch:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.download-cv {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.download-cv:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.home-experience-headline {
+    text-align: center;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 50px;
+}
+
+.home-experience-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+.home-experience-image-container img {
+    width: 50px;
+    height: 50px;
+}
