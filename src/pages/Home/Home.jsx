@@ -16,7 +16,6 @@ const icons = [
     { src: jsIcon, alt: "javascript-icon" },
     { src: htmlIcon, alt: "html-icon" },
     { src: cssIcon, alt: "css-icon" },
-    { src: expressIcon, alt: "express-icon" },
     { src: reactIcon, alt: "react-icon" },
     { src: nodeIcon, alt: "node-icon" },
     { src: pythonIcon, alt: "python-icon" },
@@ -37,10 +36,8 @@ const Home = () => {
             <div className="head-line">
                 <h2 className="hero-headline">Hi, I'm Michael.</h2>
                 <h2 className="hero-headline">
-                    I do websites and{" "}
-                    <span className="hero-gradient">
-                        full stack applications.
-                    </span>
+                    I do full stack {""}
+                    <span className="hero-gradient">web applications.</span>
                 </h2>
             </div>
             <div className="home-text">
@@ -75,7 +72,9 @@ const Home = () => {
                 <h3 className="home-experience-headline">Experience With</h3>
                 <div className="home-experience-image-container">
                     {icons.map((icon, index) => (
-                        <img key={index} src={icon.src} alt={icon.alt} />
+                        <div className="icon-wrapper" key={index}>
+                            <img src={icon.src} alt={icon.alt} />
+                        </div>
                     ))}
                 </div>
             </div>
