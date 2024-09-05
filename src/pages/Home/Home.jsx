@@ -4,26 +4,26 @@ import mg from "../../assets/images/mg.jpg";
 import { Link } from "react-router-dom";
 import jsIcon from "../../assets/images/javascript.png";
 import htmlIcon from "../../assets/images/html5.png";
-import expressIcon from "../../assets/images/express.png";
 import nodeIcon from "../../assets/images/node.png";
 import reactIcon from "../../assets/images/react.png";
 import pythonIcon from "../../assets/images/python.png";
 import figmaIcon from "../../assets/images/figma.png";
 import mongoDBIcon from "../../assets/images/mongoDB.png";
 import cssIcon from "../../assets/images/css3.png";
+import Projects from "../Projects/Projects.jsx";
 
-const icons = [
-    { src: jsIcon, alt: "javascript-icon" },
-    { src: htmlIcon, alt: "html-icon" },
-    { src: cssIcon, alt: "css-icon" },
-    { src: reactIcon, alt: "react-icon" },
-    { src: nodeIcon, alt: "node-icon" },
-    { src: pythonIcon, alt: "python-icon" },
-    { src: figmaIcon, alt: "figma-icon" },
-    { src: mongoDBIcon, alt: "mongoDB-icon" },
-];
+const Home = ({ projectsRef }) => {
+    const icons = [
+        { src: jsIcon, alt: "javascript-icon" },
+        { src: htmlIcon, alt: "html-icon" },
+        { src: cssIcon, alt: "css-icon" },
+        { src: reactIcon, alt: "react-icon" },
+        { src: nodeIcon, alt: "node-icon" },
+        { src: pythonIcon, alt: "python-icon" },
+        { src: figmaIcon, alt: "figma-icon" },
+        { src: mongoDBIcon, alt: "mongoDB-icon" },
+    ];
 
-const Home = () => {
     return (
         <div className="home-container">
             <div className="home-image">
@@ -77,6 +77,9 @@ const Home = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div ref={projectsRef}>
+                <Projects />
             </div>
         </div>
     );

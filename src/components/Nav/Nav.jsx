@@ -2,7 +2,7 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
-const Nav = () => {
+const Nav = ({ scrollToProjects }) => {
     return (
         <nav>
             <div className="logo">
@@ -17,7 +17,16 @@ const Nav = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/projects">Projects</Link>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            scrollToProjects();
+                        }}
+                        className="nav-link"
+                    >
+                        Projects
+                    </a>
                 </li>
                 <li>
                     <Link to="/about">About</Link>

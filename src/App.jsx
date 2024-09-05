@@ -6,15 +6,20 @@ import About from "./pages/About/About.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
+import { useRef } from "react";
 
 function App() {
+    const projectsRef = useRef(null);
+
+    const scrollToProjects = () => {
+        projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
     return (
         <Router>
-            <Nav />
+            <Nav scrollToProjects={scrollToProjects} />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home projectsRef={projectsRef} />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>

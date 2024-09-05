@@ -1,0 +1,58 @@
+.projects-container {
+    background-color: var(--background-color);
+}
+
+.projects-headline {
+    color: var(--secondary-text);
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 650px;
+    padding-bottom: 50px;
+}
+
+.project-card {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-info {
+    color: var(--primary-color);
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.project-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
