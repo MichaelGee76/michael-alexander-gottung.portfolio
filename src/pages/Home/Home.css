@@ -123,5 +123,6 @@
 }
 
 .icon-wrapper:hover {
+    border-radius: 5px;
     background: var(--primary-gradient);
 }

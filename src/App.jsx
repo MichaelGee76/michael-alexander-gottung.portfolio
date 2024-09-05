@@ -10,17 +10,36 @@ import { useRef } from "react";
 
 function App() {
     const projectsRef = useRef(null);
+    const aboutRef = useRef(null);
+    const contactRef = useRef(null);
 
     const scrollToProjects = () => {
         projectsRef.current?.scrollIntoView({ behavior: "smooth" });
     };
+    const scrollToAbout = () => {
+        aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+    const scrollToContact = () => {
+        contactRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
     return (
         <Router>
-            <Nav scrollToProjects={scrollToProjects} />
+            <Nav
+                scrollToProjects={scrollToProjects}
+                scrollToAbout={scrollToAbout}
+                scrollToContact={scrollToContact}
+            />
             <Routes>
-                <Route path="/" element={<Home projectsRef={projectsRef} />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route
+                    path="/"
+                    element={
+                        <Home
+                            projectsRef={projectsRef}
+                            aboutRef={aboutRef}
+                            contactRef={contactRef}
+                        />
+                    }
+                />
             </Routes>
         </Router>
     );

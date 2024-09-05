@@ -1,0 +1,22 @@
+.about-container {
+    background-color: var(--backgroud-color);
+    margin-bottom: 50px;
+}
+
+.about-headline {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--secondary-text);
+}
+
+.about-card {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.about-paragraph {
+    color: var(--secondary-text);
+}

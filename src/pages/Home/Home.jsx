@@ -11,8 +11,10 @@ import figmaIcon from "../../assets/images/figma.png";
 import mongoDBIcon from "../../assets/images/mongoDB.png";
 import cssIcon from "../../assets/images/css3.png";
 import Projects from "../Projects/Projects.jsx";
+import About from "../About/About.jsx";
+import Contact from "../Contact/Contact.jsx";
 
-const Home = ({ projectsRef }) => {
+const Home = ({ projectsRef, aboutRef, contactRef }) => {
     const icons = [
         { src: jsIcon, alt: "javascript-icon" },
         { src: htmlIcon, alt: "html-icon" },
@@ -80,6 +82,12 @@ const Home = ({ projectsRef }) => {
             </div>
             <div ref={projectsRef}>
                 <Projects />
+            </div>
+            <div ref={aboutRef}>
+                <About />
+            </div>
+            <div ref={contactRef}>
+                <Contact />
             </div>
         </div>
     );

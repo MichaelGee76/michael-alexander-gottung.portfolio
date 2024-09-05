@@ -30,10 +30,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    filter: brightness(0.75);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    filter: brightness(1);
 }
 
 .project-info {
@@ -55,4 +56,14 @@
     display: inline-block;
     transform: rotate(-45deg);
     cursor: pointer;
+}
+
+.project-description {
+    padding-left: 1rem;
+    font-size: 0.75rem;
+}
+
+.project-title {
+    padding-left: 1rem;
+    font-size: 1.5rem;
 }
