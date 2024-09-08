@@ -1,8 +1,8 @@
 .contact-container {
-    background-color: var(--card-color);
-    padding: 2rem;
-    width: 50%;
+    background-color: var(--accent-color);
+    padding: 1rem 8rem;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 .contact-headline {
@@ -15,18 +15,29 @@
     margin: auto;
     color: var(--secondary-text);
     font-size: 1.25rem;
-    text-align: center;
-    padding: 25px;
+    text-align: left;
+    padding: 1rem;
+    /* padding: 25px; */
+    width: 50vw;
+}
+
+.contact-mail-social-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
 }
 
 .email-container {
-    padding: 0;
+    padding: 1rem;
+    padding-right: 25px;
 }
 
-.social-icons {
-    padding: 25px;
+.email-icon {
+    filter: grayscale(1);
 }
 
 .social-icons a {
+    padding: 1rem;
     padding-right: 25px;
 }

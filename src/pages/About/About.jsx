@@ -6,26 +6,17 @@ const About = () => {
             <h3 className="about-headline">About Michael</h3>
             <div className="about-card">
                 <p className="about-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque consequuntur iusto similique nemo quos quis
-                    voluptatibus deserunt nulla necessitatibus, inventore
-                    aliquam quod. Nam alias nemo tenetur rem in sapiente vitae
-                    error delectus cupiditate doloribus iste, fugiat tempore ex
-                    repellat, ad quis enim, vel omnis nostrum nihil? Quisquam
-                    voluptas in et rem! Fugit ipsa rem deserunt cupiditate
-                    obcaecati tempore molestiae hic, natus suscipit ab
-                    reprehenderit nisi earum perspiciatis aperiam expedita,
-                    alias ipsum. Laudantium odio totam error fuga cupiditate.
-                    Architecto porro beatae dolor, molestiae blanditiis ex ipsa
-                    doloremque eos consectetur mollitia natus, delectus
-                    explicabo, quos libero. Quam harum fugiat veniam culpa, sed
-                    maiores aut ratione et totam earum asperiores impedit animi
-                    laudantium blanditiis cum adipisci doloremque dolorem dolore
-                    vel nostrum assumenda atque! Corporis, aliquam. Cum fuga
-                    voluptates quibusdam? Vitae ullam amet veniam accusantium ad
-                    ipsa quos eum id sed possimus quidem, ratione officia labore
-                    debitis praesentium ipsum minima natus minus ipsam
-                    voluptatem!
+                    My journey into web development started after pursuing my
+                    passion for problem-solving and creative thinking. After
+                    enrolling in a Full-Stack Bootcamp at SuperCode and
+                    dedicating countless hours to self-study, I successfully
+                    transitioned into a career as a developer. Though it hasn't
+                    always been easy, the challenges along the way have made me
+                    more curious and eager to learn. I thrive in environments
+                    where I'm constantly expanding my skill set, and I love the
+                    progress I see each day. Turning ideas into tangible digital
+                    solutions has been an incredibly rewarding experience, and
+                    I’m excited to continue growing in this dynamic field.
                 </p>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import "./Home.css";
 import "../../components/Nav/Nav.jsx";
-import mg from "../../assets/images/mg.jpg";
+import mg from "../../assets/images/mg-round.png";
 import { Link } from "react-router-dom";
 import jsIcon from "../../assets/images/javascript.png";
 import htmlIcon from "../../assets/images/html5.png";
@@ -14,7 +14,7 @@ import Projects from "../Projects/Projects.jsx";
 import About from "../About/About.jsx";
 import Contact from "../Contact/Contact.jsx";
 
-const Home = ({ projectsRef, aboutRef, contactRef }) => {
+const Home = ({ sectionRefs }) => {
     const icons = [
         { src: jsIcon, alt: "javascript-icon" },
         { src: htmlIcon, alt: "html-icon" },
@@ -58,9 +58,16 @@ const Home = ({ projectsRef, aboutRef, contactRef }) => {
                 </p>
             </div>
             <div className="home-button-container">
-                <Link to="/contact" className="get-in-touch home-button">
+                <a
+                    href="#"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        sectionRefs.scrollToContact();
+                    }}
+                    className="get-in-touch home-button"
+                >
                     Get In Touch
-                </Link>
+                </a>
 
                 <a
                     href="/mg-cv.pdf"
@@ -80,13 +87,13 @@ const Home = ({ projectsRef, aboutRef, contactRef }) => {
                     ))}
                 </div>
             </div>
-            <div ref={projectsRef}>
+            <div ref={sectionRefs.projectsRef}>
                 <Projects />
             </div>
-            <div ref={aboutRef}>
+            <div ref={sectionRefs.aboutRef}>
                 <About />
             </div>
-            <div ref={contactRef}>
+            <div ref={sectionRefs.contactRef}>
                 <Contact />
             </div>
         </div>

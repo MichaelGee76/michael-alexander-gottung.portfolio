@@ -10,7 +10,7 @@
 }
 
 .about-card {
-    width: 50%;
+    width: 50vw;
     margin: auto;
     padding: 1rem;
     text-align: center;
@@ -19,4 +19,5 @@
 
 .about-paragraph {
     color: var(--secondary-text);
+    text-align: left;
 }
