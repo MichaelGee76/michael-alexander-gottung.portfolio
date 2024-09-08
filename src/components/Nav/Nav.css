@@ -19,7 +19,7 @@ nav {
 
 .logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-grow: 1;
     flex-shrink: 0;
 }
