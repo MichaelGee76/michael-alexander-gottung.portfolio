@@ -1,5 +1,5 @@
 .about-container {
-    background-color: var(--backgroud-color);
+    background-color: var(--background-color);
     margin-bottom: 50px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .about-card {
-    width: 50vw;
+    width: 50%;
     margin: auto;
     padding: 1rem;
     text-align: center;
@@ -20,4 +20,17 @@
 .about-paragraph {
     color: var(--secondary-text);
     text-align: left;
+    width: 100%;
+}
+
+/* ############# Media Queries ################ */
+
+@media screen and (max-width: 767px) {
+    .about-card {
+        width: 100%;
+    }
+    .about-paragraph {
+        width: 70%;
+        margin: auto;
+    }
 }

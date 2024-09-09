@@ -16,8 +16,6 @@ const Contact = () => {
             </p>
 
             <div className="contact-mail-social-container">
-                <div className="email-container"></div>
-
                 <div className="social-icons">
                     <a
                         href="mailto:gottungmichael@gmail.com"
