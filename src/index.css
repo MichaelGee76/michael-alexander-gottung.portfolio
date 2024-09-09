@@ -6,6 +6,7 @@
     --card-color: #2a2a2a;
     --secondary-text: #c5c5c5;
     --primary-gradient: linear-gradient(90deg, #ff8660 0%, #9a33ff 100%);
+    --icon-color: #ffffff;
 }
 
 [data-theme="light"] {
@@ -17,6 +18,7 @@
     --card-color: #ffffff;
     --secondary-text: #434343;
     --primary-gradient: linear-gradient(90deg, #60e3ff 0%, #3366ff 100%);
+    --icon-color: #000000;
 }
 
 @font-face {

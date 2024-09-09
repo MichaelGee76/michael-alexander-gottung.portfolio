@@ -28,8 +28,8 @@
     margin: auto;
 }
 
-.email-icon {
-    filter: grayscale(1);
+.icon {
+    color: var(--icon-color);
 }
 
 .social-icons a {

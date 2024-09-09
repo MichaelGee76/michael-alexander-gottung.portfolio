@@ -1,12 +1,14 @@
 import "./Nav.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import lightLogo from "../../assets/images/logo.png";
+import darkLogo from "../../assets/images/logo-black.png";
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const Nav = ({ sectionRefs }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(true);
+    const [currentLogo, setCurrentLogo] = useState(darkLogo);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -17,6 +19,7 @@ const Nav = ({ sectionRefs }) => {
             "data-theme",
             isDarkMode ? "light" : "dark"
         );
+        setCurrentLogo(isDarkMode ? darkLogo : lightLogo);
     };
     return (
         <nav>
@@ -25,7 +28,7 @@ const Nav = ({ sectionRefs }) => {
                     <Link to="/">
                         <img
                             className="logo-image"
-                            src={logo}
+                            src={currentLogo}
                             alt="MichaelGee76-Logo"
                         />
                     </Link>
@@ -73,7 +76,7 @@ const Nav = ({ sectionRefs }) => {
                         </li>
                         <li className="toggle-theme" onClick={toggleDarkLight}>
                             {isDarkMode ? (
-                                <FaSun size={24} />
+                                <FaSun size={24} color="white" />
                             ) : (
                                 <FaMoon size={24} />
                             )}

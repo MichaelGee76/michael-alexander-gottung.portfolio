@@ -19,9 +19,9 @@ const Contact = () => {
                 <div className="social-icons">
                     <a
                         href="mailto:gottungmichael@gmail.com"
-                        className="email-text"
+                        className="email-text icon"
                     >
-                        <FaEnvelope size={24} color="white" />
+                        <FaEnvelope size={24} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/michael-alexander-gottung-5265512a6/"
