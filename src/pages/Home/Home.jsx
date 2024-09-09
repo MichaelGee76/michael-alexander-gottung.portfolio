@@ -70,7 +70,7 @@ const Home = ({ sectionRefs }) => {
                 </a>
 
                 <a
-                    href="/mg-cv.pdf"
+                    // href="/mg-cv.pdf"
                     className="download-cv home-button"
                     download="michael-alexander-gottung-cv.pdf"
                 >
