@@ -98,6 +98,10 @@
     margin-bottom: 50px;
 }
 
+.home-experience-with-container {
+    max-width: 90%;
+}
+
 .home-experience-image-container {
     display: flex;
     flex-wrap: wrap;
