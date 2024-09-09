@@ -2,14 +2,22 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Nav = ({ sectionRefs }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
+    const toggleDarkLight = () => {
+        setIsDarkMode(!isDarkMode);
+        document.documentElement.setAttribute(
+            "data-theme",
+            isDarkMode ? "light" : "dark"
+        );
+    };
     return (
         <nav>
             <div className="nav-container">
@@ -62,6 +70,13 @@ const Nav = ({ sectionRefs }) => {
                             >
                                 Contact
                             </a>
+                        </li>
+                        <li className="toggle-theme" onClick={toggleDarkLight}>
+                            {isDarkMode ? (
+                                <FaSun size={24} />
+                            ) : (
+                                <FaMoon size={24} />
+                            )}
                         </li>
                     </ul>
                 </div>
