@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { FaLinkedin, FaXing, FaGithub, FaEnvelope } from "react-icons/fa";
-
+// TODO - fix the dark light wave animation
 const Contact = () => {
     return (
         <div className="contact-container">
@@ -21,28 +21,28 @@ const Contact = () => {
                         href="mailto:gottungmichael@gmail.com"
                         className="email-text icon"
                     >
-                        <FaEnvelope size={24} />
+                        <FaEnvelope size={28} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/michael-alexander-gottung-5265512a6/"
                         target="_blank"
                         className="icon-link"
                     >
-                        <FaLinkedin size={24} />
+                        <FaLinkedin size={28} />
                     </a>
                     <a
                         href="https://www.xing.com/profile/MichaelAlexander_Gottung039301/web_profiles"
                         target="_blank"
                         className="icon-link"
                     >
-                        <FaXing size={24} />
+                        <FaXing size={28} />
                     </a>
                     <a
                         href="https://github.com/MichaelGee76/MichaelGee76"
                         target="_blank"
                         className="icon-link"
                     >
-                        <FaGithub size={24} />
+                        <FaGithub size={28} />
                     </a>
                 </div>
             </div>

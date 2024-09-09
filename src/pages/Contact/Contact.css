@@ -35,6 +35,36 @@
 .social-icons a {
     padding: 1rem;
     padding-right: 25px;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        transform: scale(1);
+        color: var(--primary-color);
+    }
+    50% {
+        transform: scale(1.2);
+        color: var(--secondary-color);
+    }
+}
+
+/* Verzögerungen für die Welle */
+.social-icons a:nth-child(1) {
+    animation-delay: 0s; /* Das erste Icon startet sofort */
+}
+
+.social-icons a:nth-child(2) {
+    animation-delay: 0.5s; /* Verzögerung von 0.5 Sekunden */
+}
+
+.social-icons a:nth-child(3) {
+    animation-delay: 1s; /* Verzögerung von 1 Sekunde */
+}
+
+.social-icons a:nth-child(4) {
+    animation-delay: 1.5s; /* Verzögerung von 1.5 Sekunden */
 }
 
 /* ########### Media Queries ########### */

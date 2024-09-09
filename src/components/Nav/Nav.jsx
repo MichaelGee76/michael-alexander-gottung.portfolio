@@ -84,9 +84,9 @@ const Nav = ({ sectionRefs }) => {
                     </ul>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
+                    <div className={`bar ${isOpen ? "change" : ""}`}></div>
+                    <div className={`bar ${isOpen ? "change" : ""}`}></div>
+                    <div className={`bar ${isOpen ? "change" : ""}`}></div>
                 </div>
             </div>
         </nav>
