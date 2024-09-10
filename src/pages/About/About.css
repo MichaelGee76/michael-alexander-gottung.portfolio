@@ -1,6 +1,5 @@
 .about-container {
     background-color: var(--background-color);
-    margin-bottom: 50px;
 }
 
 .about-headline {
@@ -30,7 +29,11 @@
         width: 100%;
     }
     .about-paragraph {
-        width: 70%;
+        width: 90%;
         margin: auto;
+        padding-bottom: 20px;
     }
+    /* .about-paragraph:nth-child(-1) {
+        padding-bottom: 0;
+    } */
 }

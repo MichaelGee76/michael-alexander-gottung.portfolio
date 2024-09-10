@@ -28,6 +28,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: OpenSans;
+    src: url("../src/assets/fonts/OpenSans/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -40,6 +47,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: "OpenSans", sans-serif;
 }
 
 img {

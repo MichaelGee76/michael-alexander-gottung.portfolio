@@ -43,18 +43,24 @@ const Home = ({ sectionRefs }) => {
                 </h2>
             </div>
             <div className="home-text">
-                <p>
+                <p className="home-text-paragraph">
                     I am an aspiring web developer with a passion for creating
-                    innovative and user-friendly digital solutions. With a
-                    strong foundation in front-end technologies and a growing
-                    expertise in back-end development, I am eager to take on new
-                    challenges that push the boundaries of my skills. I thrive
-                    in dynamic environments and am constantly seeking
-                    opportunities to collaborate, learn, and contribute to
-                    impactful projects. As I continue to expand my knowledge and
-                    expertise, I am excited to connect with forward-thinking
-                    teams and companies looking for fresh talent to help drive
-                    their vision forward.
+                    innovative and user-friendly digital solutions.
+                </p>{" "}
+                <p className="home-text-paragraph">
+                    {" "}
+                    With a strong foundation in front-end technologies and a
+                    growing expertise in back-end development, I am eager to
+                    take on new challenges that push the boundaries of my
+                    skills. I thrive in dynamic environments and am constantly
+                    seeking opportunities to collaborate, learn, and contribute
+                    to impactful projects.
+                </p>
+                <p className="home-text-paragraph">
+                    {" "}
+                    As I continue to expand my knowledge and expertise, I am
+                    excited to connect with forward-thinking teams and companies
+                    looking for fresh talent to help drive their vision forward.
                 </p>
             </div>
             <div className="home-button-container">
@@ -70,7 +76,7 @@ const Home = ({ sectionRefs }) => {
                 </a>
 
                 <a
-                    // href="/mg-cv.pdf"
+                    href="/mg-cv.pdf"
                     className="download-cv home-button"
                     download="michael-alexander-gottung-cv.pdf"
                 >
@@ -90,9 +96,11 @@ const Home = ({ sectionRefs }) => {
             <div ref={sectionRefs.projectsRef}>
                 <Projects />
             </div>
-            <div ref={sectionRefs.aboutRef}>
-                <About />
-            </div>
+            {
+                <div ref={sectionRefs.aboutRef}>
+                    <About />
+                </div>
+            }
             <div ref={sectionRefs.contactRef}>
                 <Contact />
             </div>

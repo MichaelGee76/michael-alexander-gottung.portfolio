@@ -12,11 +12,15 @@ const About = () => {
                     dedicating countless hours to self-study, I successfully
                     transitioned into a career as a developer. Though it hasn't
                     always been easy, the challenges along the way have made me
-                    more curious and eager to learn. I thrive in environments
-                    where I'm constantly expanding my skill set, and I love the
-                    progress I see each day. Turning ideas into tangible digital
-                    solutions has been an incredibly rewarding experience, and
-                    I’m excited to continue growing in this dynamic field.
+                    more curious and eager to learn.
+                </p>{" "}
+                <p className="about-paragraph">
+                    {" "}
+                    I thrive in environments where I'm constantly expanding my
+                    skill set, and I love the progress I see each day. Turning
+                    ideas into tangible digital solutions has been an incredibly
+                    rewarding experience, and I'm excited to continue growing in
+                    this dynamic field.
                 </p>
             </div>
         </div>

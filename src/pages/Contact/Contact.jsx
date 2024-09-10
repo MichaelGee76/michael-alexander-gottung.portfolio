@@ -11,8 +11,9 @@ const Contact = () => {
             <p className="contact-paragraph">
                 I'd love to hear from you! Whether you have a project in mind, a
                 question, or just want to connect, feel free to send me an
-                email. You can also connect with me on LinkedIn or Xing. I look
-                forward to meeting new people and exploring new opportunities!
+                email. You can also connect with me on LinkedIn or Xing. <br />{" "}
+                I look forward to meeting new people and exploring new
+                opportunities!
             </p>
 
             <div className="contact-mail-social-container">

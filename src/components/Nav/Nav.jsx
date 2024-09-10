@@ -2,7 +2,7 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 import lightLogo from "../../assets/images/logo.png";
 import darkLogo from "../../assets/images/logo-black.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const Nav = ({ sectionRefs }) => {
@@ -20,7 +20,15 @@ const Nav = ({ sectionRefs }) => {
             isDarkMode ? "light" : "dark"
         );
         setCurrentLogo(isDarkMode ? darkLogo : lightLogo);
+        setIsOpen(false);
     };
+
+    // close menu when clicked
+    const handleLinkClicks = (scrollFunction) => {
+        scrollFunction();
+        setIsOpen(false);
+    };
+
     return (
         <nav>
             <div className="nav-container">
@@ -40,8 +48,9 @@ const Nav = ({ sectionRefs }) => {
                                 href="#"
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    sectionRefs.scrollToProjects();
-                                    toggleMenu();
+                                    handleLinkClicks(
+                                        sectionRefs.scrollToProjects
+                                    );
                                 }}
                                 className="nav-link"
                             >
@@ -53,8 +62,7 @@ const Nav = ({ sectionRefs }) => {
                                 href="#"
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    sectionRefs.scrollToAbout();
-                                    toggleMenu();
+                                    handleLinkClicks(sectionRefs.scrollToAbout);
                                 }}
                                 className="nav-link"
                             >
@@ -66,8 +74,9 @@ const Nav = ({ sectionRefs }) => {
                                 href="#"
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    sectionRefs.scrollToContact();
-                                    toggleMenu();
+                                    handleLinkClicks(
+                                        sectionRefs.scrollToContact
+                                    );
                                 }}
                                 className="nav-link"
                             >

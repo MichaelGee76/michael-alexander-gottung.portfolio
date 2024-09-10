@@ -8,6 +8,7 @@ nav {
     font-family: "Plus-Jakarta-Sans", sans-serif;
     position: relative;
     flex-wrap: wrap;
+    transition: background-color 0.3s ease;
 }
 
 .nav-container {
@@ -107,6 +108,7 @@ a:hover {
         position: fixed;
         width: 100%;
         z-index: 1001;
+        transition: background-color 0.3s ease;
     }
     .nav-container {
         display: flex;
@@ -126,15 +128,15 @@ a:hover {
         width: 100%;
         padding: 0;
         margin: 0;
-        background-color: rgb(
-            25,
-            25,
-            25
-        ); /* root color(accent color) transfomed*/
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
     .menu.open ul {
         display: flex;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .hamburger {
@@ -144,48 +146,49 @@ a:hover {
     ul li {
         margin: 1rem 0;
     }
-
-    .hero-headline {
-        font-size: 2.25rem;
-    }
-
-    .home-text {
-        max-width: 70%;
-        /* text-align: left; */
-    }
-    .home-button-container {
-        max-width: 100%;
-    }
-
-    .home-experience-image-container {
-        max-width: 100%;
-    }
 }
 
-/* ########## Fixed Background open hamburger menu dark mode ######## */
+/* ######## Dark Mode Settings ############ */
+
+/* [data-theme="dark"] .menu.open ul {
+    background-color: var(--accent-color);
+} */
+
+[data-theme="dark"] nav {
+    background-color: var(--accent-color); /* Hintergrund für Dark Mode */
+    color: var(--primary-color);
+}
+
 [data-theme="dark"] .menu.open ul {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+[data-theme="dark"] ul a {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .hamburger .bar {
+    background-color: var(--primary-color);
 }
 
 /* ############ Light Mode ############# */
 [data-theme="light"] nav {
-    background-color: var(--background-color);
+    background-color: var(--accent-color);
     color: var(--primary-color);
 }
 
-[data-theme="light"] .menu.open,
-ul {
+[data-theme="light"] .menu.open ul {
     background: var(--primary-gradient);
     background-size: 200%;
     background-position: center;
 }
 
 [data-theme="light"] ul a {
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 [data-theme="light"] .dark-light-icon-moon {
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 [data-theme="light"] ul a:hover {
@@ -196,7 +199,7 @@ ul {
     transition: all 0.3s ease;
 }
 
-/* ############ Hamburger Menu Anpassung im Light Mode ############ */
+/* ############ Hamburger Menu Setting Light Mode ############ */
 [data-theme="light"] .hamburger .bar {
     background-color: var(--secondary-text);
 }
