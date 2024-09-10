@@ -21,28 +21,28 @@ const Contact = () => {
                         href="mailto:gottungmichael@gmail.com"
                         className="email-text icon"
                     >
-                        <FaEnvelope size={28} />
+                        <FaEnvelope size={32} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/michael-alexander-gottung-5265512a6/"
                         target="_blank"
                         className="icon-link"
                     >
-                        <FaLinkedin size={28} />
+                        <FaLinkedin size={32} />
                     </a>
                     <a
                         href="https://www.xing.com/profile/MichaelAlexander_Gottung039301/web_profiles"
                         target="_blank"
                         className="icon-link"
                     >
-                        <FaXing size={28} />
+                        <FaXing size={32} />
                     </a>
                     <a
                         href="https://github.com/MichaelGee76/MichaelGee76"
                         target="_blank"
                         className="icon-link"
                     >
-                        <FaGithub size={28} />
+                        <FaGithub size={32} />
                     </a>
                 </div>
             </div>

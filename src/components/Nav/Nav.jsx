@@ -8,7 +8,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 const Nav = ({ sectionRefs }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(true);
-    const [currentLogo, setCurrentLogo] = useState(darkLogo);
+    const [currentLogo, setCurrentLogo] = useState(lightLogo);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -78,7 +78,10 @@ const Nav = ({ sectionRefs }) => {
                             {isDarkMode ? (
                                 <FaSun size={24} color="white" />
                             ) : (
-                                <FaMoon size={24} />
+                                <FaMoon
+                                    size={24}
+                                    className="dark-light-icon-moon"
+                                />
                             )}
                         </li>
                     </ul>

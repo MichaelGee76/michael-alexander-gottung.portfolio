@@ -16,9 +16,9 @@ import Contact from "../Contact/Contact.jsx";
 
 const Home = ({ sectionRefs }) => {
     const icons = [
-        { src: jsIcon, alt: "javascript-icon" },
         { src: htmlIcon, alt: "html-icon" },
         { src: cssIcon, alt: "css-icon" },
+        { src: jsIcon, alt: "javascript-icon" },
         { src: reactIcon, alt: "react-icon" },
         { src: nodeIcon, alt: "node-icon" },
         { src: pythonIcon, alt: "python-icon" },

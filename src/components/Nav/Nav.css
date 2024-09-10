@@ -22,6 +22,7 @@ nav {
     justify-content: flex-start;
     flex-grow: 1;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .logo-image {
@@ -53,6 +54,11 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.toggle-theme {
+    cursor: pointer;
 }
 
 /* ############ Hamburger Menu ########### */
@@ -98,6 +104,9 @@ a:hover {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem 2rem;
+        position: fixed;
+        width: 100%;
+        z-index: 1001;
     }
     .nav-container {
         display: flex;
@@ -117,11 +126,10 @@ a:hover {
         width: 100%;
         padding: 0;
         margin: 0;
-        background-color: rgba(
+        background-color: rgb(
             25,
             25,
-            25,
-            0.9
+            25
         ); /* root color(accent color) transfomed*/
     }
 
@@ -152,4 +160,43 @@ a:hover {
     .home-experience-image-container {
         max-width: 100%;
     }
+}
+
+/* ########## Fixed Background open hamburger menu dark mode ######## */
+[data-theme="dark"] .menu.open ul {
+    background: var(--accent-color);
+}
+
+/* ############ Light Mode ############# */
+[data-theme="light"] nav {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+[data-theme="light"] .menu.open,
+ul {
+    background: var(--primary-gradient);
+    background-size: 200%;
+    background-position: center;
+}
+
+[data-theme="light"] ul a {
+    color: var(--background-color);
+}
+
+[data-theme="light"] .dark-light-icon-moon {
+    color: var(--background-color);
+}
+
+[data-theme="light"] ul a:hover {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+/* ############ Hamburger Menu Anpassung im Light Mode ############ */
+[data-theme="light"] .hamburger .bar {
+    background-color: var(--secondary-text);
 }
