@@ -1,7 +1,7 @@
 import "./Projects.css";
 import { useState } from "react";
 import etchImage from "../../assets/images/etch-a-sketch.png";
-import sportsDb from "../../assets/images/SportsDB.png";
+import sportsDb from "../../assets/images/sportsDB.png";
 import finsta from "../../assets/images/finstagram.png";
 import tasty from "../../assets/images/tasty.png";
 
