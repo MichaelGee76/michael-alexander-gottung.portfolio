@@ -28,9 +28,9 @@ nav {
 
 .logo-image {
     color: blue;
-    height: 30px;
-    min-width: 150px;
-    max-width: 200px;
+    height: 50px;
+    min-width: 200px;
+    max-width: 250px;
 }
 
 ul {
@@ -146,16 +146,18 @@ a:hover {
     ul li {
         margin: 1rem 0;
     }
+
+    .logo-image {
+        height: 40px;
+        min-width: 180px;
+        max-width: 230px;
+    }
 }
 
 /* ######## Dark Mode Settings ############ */
 
-/* [data-theme="dark"] .menu.open ul {
-    background-color: var(--accent-color);
-} */
-
 [data-theme="dark"] nav {
-    background-color: var(--accent-color); /* Hintergrund für Dark Mode */
+    /* Hintergrund für Dark Mode */
     color: var(--primary-color);
 }
 
@@ -172,6 +174,7 @@ a:hover {
 }
 
 /* ############ Light Mode ############# */
+
 [data-theme="light"] nav {
     background-color: var(--accent-color);
     color: var(--primary-color);

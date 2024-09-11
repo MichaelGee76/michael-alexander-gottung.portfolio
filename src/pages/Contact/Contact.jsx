@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { FaLinkedin, FaXing, FaGithub, FaEnvelope } from "react-icons/fa";
-// TODO - fix the dark light wave animation
+
 const Contact = () => {
     return (
         <div className="contact-container">

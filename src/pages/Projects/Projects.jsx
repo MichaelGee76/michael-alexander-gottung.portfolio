@@ -1,43 +1,46 @@
 import "./Projects.css";
 import { useState } from "react";
+import etchImage from "../../assets/images/etch-a-sketch.png";
+import sportsDb from "../../assets/images/SportsDB.png";
+import finsta from "../../assets/images/finstagram.png";
+import tasty from "../../assets/images/tasty.png";
 
 const projects = [
     {
         id: 1,
         title: "Tasty",
-        description: "Final React Frontend Project",
-        image: "https://picsum.photos/400/300",
-        link: "",
-        github: "github link here",
-        summary: "Some random text here",
+        image: tasty,
+        link: "https://tasty-mu.vercel.app/",
+        github: "https://github.com/fredwardp/tasty",
+        summary:
+            "Tasty is a mobile-only web app that allows users to browse and search for recipes by category and country, providing detailed recipe information, built using React and a third-party recipe API.",
     },
     {
         id: 2,
-        title: "Movie DB",
-        description: "React Project",
-        image: "https://picsum.photos/400/300",
-        link: "",
-        github: "github link here",
-        summary: "Some random text here",
+        title: "Finstagram",
+        image: finsta,
+        link: "https://www.mern-stack.de/",
+        github: "https://github.com/MichaelGee76/finstergram",
+        summary:
+            "Finstagram is a full-featured Instagram clone that allows users to follow others, post images with filters, engage with posts, and includes features like chat, notifications, and a dark mode, built using React, Express.js, and MongoDB.",
     },
     {
         id: 3,
-        title: "Application Management Website",
-        description: "An App",
-        image: "https://picsum.photos/400/300",
-        link: "",
-        github: "github link here",
-        summary: "Some random text here",
+        title: "Sports Database",
+        image: sportsDb,
+        link: "https://sports-db-eta.vercel.app/",
+        github: "https://github.com/fredwardp/SportsDB?tab=readme-ov-file",
+        summary:
+            "SportsDB is a React-based application that provides real-time, detailed information on clubs, leagues, and players from various sports, with customizable themes and filtering options.",
     },
     {
         id: 4,
-        title: "React Weather App",
-        description: "React Weather App",
-        image: "https://picsum.photos/400/300",
-        link: "",
-        github: "github link here",
+        title: "Etch-A-Sketch",
+        image: etchImage,
+        link: "https://michaelgee76.github.io/etch-a-sketch/",
+        github: "https://github.com/MichaelGee76/etch-a-sketch",
         summary:
-            "Some random text here Some random text hereSome random text here",
+            "Etch-A-Sketch is an interactive drawing game where users create pixelated designs by moving their mouse across a customizable grid.",
     },
 ];
 
@@ -68,17 +71,13 @@ const Projects = () => {
                                     alt={project.title}
                                     className="project-image"
                                 />
-                                <div className="project-info">
+                                {/* <div className="project-info">
                                     <div className="project-info-container">
-                                        <p className="project-description">
-                                            {project.description}
-                                        </p>
                                         <h3 className="project-title">
                                             {project.title}
                                         </h3>
                                     </div>
-                                    <span className="project-span">➜</span>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="flip-card-back">
                                 <div className="project-summary">
@@ -87,11 +86,16 @@ const Projects = () => {
                                 <div className="project-link-container">
                                     <a
                                         href={project.link}
+                                        target="_blank"
                                         className="project-link"
                                     >
                                         Live Site
                                     </a>
-                                    <a href="#" className="project-link">
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        className="project-link"
+                                    >
                                         GitHub
                                     </a>
                                 </div>
