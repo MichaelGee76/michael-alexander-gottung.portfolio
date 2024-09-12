@@ -1,5 +1,8 @@
 import "./Home.css";
 import "../../components/Nav/Nav.jsx";
+import "../Imprint/Imprint.jsx";
+import { Link } from "react-router-dom";
+
 import mg from "../../assets/images/mg-round.png";
 import jsIcon from "../../assets/images/javascript.png";
 import htmlIcon from "../../assets/images/html5.png";
@@ -95,13 +98,16 @@ const Home = ({ sectionRefs }) => {
             <div ref={sectionRefs.projectsRef}>
                 <Projects />
             </div>
-            {
-                <div ref={sectionRefs.aboutRef}>
-                    <About />
-                </div>
-            }
+            <div ref={sectionRefs.aboutRef}>
+                <About />
+            </div>
             <div ref={sectionRefs.contactRef}>
                 <Contact />
+            </div>
+            <div className="imprint-link-container">
+                <Link to="/imprint" className="imprint-link">
+                    Imprint
+                </Link>
             </div>
         </div>
     );
