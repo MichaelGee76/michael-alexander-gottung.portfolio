@@ -74,13 +74,13 @@ const Home = ({ sectionRefs }) => {
                     Get In Touch
                 </a>
 
-                <a
-                    // href="/mg-cv.pdf"
+                {/* <a
+                    href="/mg-cv.pdf"
                     className="download-cv home-button"
                     download="michael-alexander-gottung-cv.pdf"
                 >
                     Download CV
-                </a>
+                </a> */}
             </div>
             <div className="home-experience-with-container">
                 <h3 className="home-experience-headline">Experience With</h3>

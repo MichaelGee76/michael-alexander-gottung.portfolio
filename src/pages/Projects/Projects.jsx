@@ -54,13 +54,13 @@ const projects = [
             "Movies4You is a React-based web application that offers a movie list with filtering and search functionalities, allowing users to sort by date, rating, and alphabetical order.",
     },
     {
-        id: 5,
+        id: 6,
         title: "Weather-App",
         image: weather,
         link: "https://michaelgee76.github.io/weather/",
         github: "https://github.com/MichaelGee76/weather",
         summary:
-            "The weather app is a React-based application that provides current weather information and a 5-day forecast for any location, with dynamic background changes based on the weather conditions.",
+            "The weather app is a JavaScript-based application that provides current weather information and a 5-day forecast for any location, with dynamic background changes based on the weather conditions.",
     },
 ];
 
@@ -94,6 +94,9 @@ const Projects = () => {
                                     alt={project.title}
                                     className="project-image"
                                 />
+                                <h3 className="flip-card-front-headline">
+                                    {project.title}
+                                </h3>
                             </div>
                             <div className="flip-card-back">
                                 <div className="project-summary">
