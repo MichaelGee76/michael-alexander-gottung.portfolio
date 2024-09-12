@@ -18,7 +18,9 @@ const Imprint = () => {
                 <h2>Kontakt</h2>
                 <p>
                     E-Mail:{" "}
-                    <a href="mailto:micha@micheda.de">micha@micheda.de</a>
+                    <a href="mailto:gottungmichael@gmail.com">
+                        gottungmichael@gmail.com
+                    </a>
                 </p>
 
                 <h2>Berufsbezeichnung</h2>
@@ -52,7 +54,7 @@ const Imprint = () => {
                 </p>
             </div>
             <div className="imprint-link-home">
-                <Link to="/" className="home-button">
+                <Link to="/" className="home-button ">
                     Home
                 </Link>
             </div>
