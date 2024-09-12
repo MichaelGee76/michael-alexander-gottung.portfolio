@@ -4,6 +4,8 @@ import etchImage from "../../assets/images/etch-a-sketch.png";
 import sportsDb from "../../assets/images/sportsDB.png";
 import finsta from "../../assets/images/finstagram.png";
 import tasty from "../../assets/images/tasty.png";
+import movie from "../../assets/images/movie4you.png";
+import weather from "../../assets/images/weather-react.png";
 
 const projects = [
     {
@@ -42,16 +44,37 @@ const projects = [
         summary:
             "Etch-A-Sketch is an interactive drawing game where users create pixelated designs by moving their mouse across a customizable grid.",
     },
+    {
+        id: 5,
+        title: "Movie4You",
+        image: movie,
+        link: "https://movie4you-fawn.vercel.app/",
+        github: "https://github.com/MichaelGee76/movie4you-react",
+        summary:
+            "Movies4You is a React-based web application that offers a movie list with filtering and search functionalities, allowing users to sort by date, rating, and alphabetical order.",
+    },
+    {
+        id: 5,
+        title: "Weather-App",
+        image: weather,
+        link: "https://michaelgee76.github.io/weather/",
+        github: "https://github.com/MichaelGee76/weather",
+        summary:
+            "The weather app is a React-based application that provides current weather information and a 5-day forecast for any location, with dynamic background changes based on the weather conditions.",
+    },
 ];
 
 const Projects = () => {
-    const [flippedCards, setFlippedCards] = useState({});
+    const [flippedCardId, setFlippedCardId] = useState(null);
+
     const toggleFlip = (id) => {
-        setFlippedCards((prev) => ({
-            ...prev,
-            [id]: !prev[id],
-        }));
+        if (flippedCardId === id) {
+            setFlippedCardId(null);
+        } else {
+            setFlippedCardId(id);
+        }
     };
+
     return (
         <div className="projects-container">
             <h2 className="projects-headline">Projects</h2>
@@ -60,7 +83,7 @@ const Projects = () => {
                     <div
                         key={project.id}
                         className={`flip-card ${
-                            flippedCards[project.id] ? "flip" : ""
+                            flippedCardId === project.id ? "flip" : ""
                         }`}
                         onClick={() => toggleFlip(project.id)}
                     >
@@ -71,13 +94,6 @@ const Projects = () => {
                                     alt={project.title}
                                     className="project-image"
                                 />
-                                {/* <div className="project-info">
-                                    <div className="project-info-container">
-                                        <h3 className="project-title">
-                                            {project.title}
-                                        </h3>
-                                    </div>
-                                </div> */}
                             </div>
                             <div className="flip-card-back">
                                 <div className="project-summary">
@@ -91,11 +107,7 @@ const Projects = () => {
                                     >
                                         Live Site
                                     </a>
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        className="project-link"
-                                    >
+                                    <a href="#" className="project-link">
                                         GitHub
                                     </a>
                                 </div>

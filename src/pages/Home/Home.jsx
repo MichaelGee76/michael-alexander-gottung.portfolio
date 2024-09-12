@@ -1,7 +1,6 @@
 import "./Home.css";
 import "../../components/Nav/Nav.jsx";
 import mg from "../../assets/images/mg-round.png";
-import { Link } from "react-router-dom";
 import jsIcon from "../../assets/images/javascript.png";
 import htmlIcon from "../../assets/images/html5.png";
 import nodeIcon from "../../assets/images/node.png";
