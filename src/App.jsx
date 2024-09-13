@@ -40,7 +40,7 @@ function App() {
                     path="/"
                     element={<Home sectionRefs={refWithScroll} />}
                 />
-                <Route path="/imprint" element={<Imprint />} />
+                <Route path="/legal-notice" element={<Imprint />} />
             </Routes>
         </Router>
     );
