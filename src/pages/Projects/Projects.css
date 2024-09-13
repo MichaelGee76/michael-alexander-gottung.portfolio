@@ -38,6 +38,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding: 0 1rem;
+}
+
+.flip-card-front-stack {
+    font-size: smaller;
 }
 
 .flip-card-back {
@@ -57,6 +62,7 @@
 .project-summary {
     margin-bottom: 1rem;
     font-size: 1rem;
+    color: var(--primary-color);
 }
 
 .project-link-container {
