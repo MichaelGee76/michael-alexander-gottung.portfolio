@@ -6,20 +6,21 @@ import finsta from "../../assets/images/finstagram.png";
 import tasty from "../../assets/images/tasty.png";
 import movie from "../../assets/images/movie4you.png";
 import weather from "../../assets/images/weather-react.png";
+import ams from "../../assets/images/ams.png";
 
 const projects = [
     {
         id: 1,
-        title: "Tasty",
-        image: tasty,
-        link: "https://tasty-mu.vercel.app/",
-        github: "https://github.com/fredwardp/tasty",
+        title: "Application Management Service",
+        image: ams,
+        link: "not published yet",
+        github: "https://github.com/MichaelGee76/application-management-service",
         summary:
-            "Tasty is a mobile-only web app that allows users to browse and search for recipes by category and country, providing detailed recipe information, built using React and a third-party recipe API.",
-        stack: "React, API",
+            "The project is a job application management system (AMS) that helps users organize and track their job applications efficiently, with authentication and user-friendly features built using React, Node.js, and MongoDB.",
+        stack: "MongoDb, Express, React, Node",
     },
     {
-        id: 2,
+        id: 3,
         title: "Finstagram",
         image: finsta,
         link: "https://www.mern-stack.de/",
@@ -29,7 +30,18 @@ const projects = [
         stack: "React, Express.js, Mongoose, MongoDB",
     },
     {
-        id: 3,
+        id: 2,
+        title: "Tasty",
+        image: tasty,
+        link: "https://tasty-mu.vercel.app/",
+        github: "https://github.com/fredwardp/tasty",
+        summary:
+            "Tasty is a mobile-only web app that allows users to browse and search for recipes by category and country, providing detailed recipe information, built using React and a third-party recipe API.",
+        stack: "React, API",
+    },
+
+    {
+        id: 4,
         title: "Sports Database",
         image: sportsDb,
         link: "https://sports-db-eta.vercel.app/",
@@ -39,7 +51,7 @@ const projects = [
         stack: "React, API",
     },
     {
-        id: 4,
+        id: 5,
         title: "Etch-A-Sketch",
         image: etchImage,
         link: "https://michaelgee76.github.io/etch-a-sketch/",
@@ -49,7 +61,7 @@ const projects = [
         stack: "HTML, CSS, JavaScript",
     },
     {
-        id: 5,
+        id: 6,
         title: "Movie4You",
         image: movie,
         link: "https://movie4you-fawn.vercel.app/",
@@ -59,7 +71,7 @@ const projects = [
         stack: "HTML, CSS, JavaScript",
     },
     {
-        id: 6,
+        id: 7,
         title: "Weather-App",
         image: weather,
         link: "https://michaelgee76.github.io/weather/",
