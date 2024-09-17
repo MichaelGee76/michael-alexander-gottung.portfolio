@@ -53,12 +53,12 @@
     33% {
         transform: scale(1.1);
         filter: brightness(1.5);
-        color: #ff8660;
+        color: #9933ff;
+        
     }
     66% {
         transform: scale(1.2);
         filter: brightness(1.2);
-        /* color: #9933ff; */
         color: #ff8660;
     }
     100% {
@@ -70,19 +70,19 @@
 
 /* Verzögerungen für die Welle */
 .social-icons a:nth-child(1) {
-    animation-delay: 0s; /* Das erste Icon startet sofort */
+    animation-delay: 0s; 
 }
 
 .social-icons a:nth-child(2) {
-    animation-delay: 1s; /* Verzögerung von 0.5 Sekunden */
+    animation-delay: 1s; /
 }
 
 .social-icons a:nth-child(3) {
-    animation-delay: 1.5s; /* Verzögerung von 1 Sekunde */
+    animation-delay: 1.5s;
 }
 
 .social-icons a:nth-child(4) {
-    animation-delay: 2s; /* Verzögerung von 1.5 Sekunden */
+    animation-delay: 2s; 
 }
 
 /* ########### Media Queries ########### */
@@ -141,17 +141,17 @@
 
 /* Verzögerungen für die Welle */
 .social-icons a:nth-child(1) {
-    animation-delay: 0s; /* Das erste Icon startet sofort */
+    animation-delay: 0s; 
 }
 
 .social-icons a:nth-child(2) {
-    animation-delay: 1s; /* Verzögerung von 0.5 Sekunden */
+    animation-delay: 1s; 
 }
 
 .social-icons a:nth-child(3) {
-    animation-delay: 1.5s; /* Verzögerung von 1 Sekunde */
+    animation-delay: 1.5s; 
 }
 
 .social-icons a:nth-child(4) {
-    animation-delay: 2s; /* Verzögerung von 1.5 Sekunden */
+    animation-delay: 2s;
 }

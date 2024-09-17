@@ -106,7 +106,7 @@ const Home = ({ sectionRefs }) => {
             </div>
             <div className="imprint-link-container">
                 <Link to="/legal-notice" className="imprint-link">
-                    Legal Notice
+                    Legal Notice (Impressum)
                 </Link>
             </div>
         </div>

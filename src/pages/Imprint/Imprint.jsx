@@ -5,7 +5,7 @@ const Imprint = () => {
     return (
         <div className="imprint-container">
             <div className="imprint-content">
-                <h1>Imprint</h1>
+                <h1>Legal Notice (Impressum)</h1>
 
                 <h2>Information according to § 5 TMG</h2>
                 <p>
